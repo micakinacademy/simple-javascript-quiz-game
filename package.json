@@ -1,0 +1,30 @@
+{
+  "name": "quiz-game",
+  "version": "1.0.0",
+  "description": "A Simple Quiz Game built with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "qg-test",
+    "build-tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micakinacademy/simple-javascript-quiz-game.git"
+  },
+  "keywords": [
+    "quiz",
+    "game",
+    "javascript"
+  ],
+  "author": "micakinacademy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micakinacademy/simple-javascript-quiz-game/issues"
+  },
+  "homepage": "https://github.com/micakinacademy/simple-javascript-quiz-game#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
+}
