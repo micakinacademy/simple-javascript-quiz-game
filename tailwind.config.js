@@ -1,6 +1,6 @@
 module.exports = {
   purge:  {
-    enabled: true,
+    enabled: false,
     content: [
       './pages/**/*.vue',
       './**/*.html',
@@ -21,6 +21,34 @@ module.exports = {
         'screen-90': '90vh',
 
       }),
+      
+      colors: {
+
+        
+        accent1: {
+          '100': '#fdeaea',
+          '200': '#ffdcd2',
+          '300': '#FFBDA7',
+          '400': '#ff7f52',
+          '500': '#FF6631',
+          '600': '#ff5216',
+        },
+        accent2: {
+          '100': '#ffebeb',
+          '200': '#ffcccc',
+          '300': '#ff9f9f',
+          '400': '#ff5757',
+          '500': '#fc2222',
+          '600': '#bf0000',
+        },
+        accent3: {
+          '100': '#f9f9f9',
+          '200': '#f5f5f5',
+          '300': '#d1d1d1',
+          '400': '#828282',
+          '500': '#363636',
+          '600': '#171717',
+        },
 
       zIndex: {
         '10': 10,
