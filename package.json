@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "qg-test",
-    "build-tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/app.css"
+    "build-tailwind": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/app.css  --watch"
   },
   "repository": {
     "type": "git",
