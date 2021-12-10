@@ -18,7 +18,7 @@ open the html file to start the game
 ### Setup Development Environment
 
 #### Step 1
-Clone th Repo 
+Clone the Repo 
 
 ```
  git clone https://github.com/micakinacademy/simple-javascript-quiz-game.git
