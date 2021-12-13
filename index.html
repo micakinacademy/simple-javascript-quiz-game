@@ -11,41 +11,53 @@
 
 <body>
 
-  <section class="max-w-7xl mx-auto">
-    <div class="flex justify-between items-center py-6">
-      
-      <div>
-        <img src="assets/images/quizelo.svg" class="w-32" />
+  <section class="max-w-7xl mx-auto px-6 md:px-0">
+    <div class="block md:flex justify-between items-center py-6 bg-white ">
+
+      <div class="flex justify-between">
+        <div >
+          <img src="assets/images/quizelo.svg" class="w-32" />
+        </div>
+
+        <div id="menu-button" class="block md:hidden justify-end">
+          <img src="./assets/images/menu.svg" alt="" width="30px" />
+        </div>
+
+        <div id="close-button" class="hidden md:hidden">
+          <img src="./assets/images/close_window.svg" alt="" width="30px" />
+        </div>
+        
       </div>
-      <div>
-        <a href="#" class="mx-6">
+
+      <div class="items-center md:flex hidden" id="menu-items">
+        <a href="#" class="pb-2 px-6 md:p-0 my-6 md:my-0 md:mx-6 block border-b-2 md:border-none">
           How it works?
         </a>
-        
-        <a href="#" class="mx-6">
+  
+        <a href="#" class="pb-2 px-6 md:p-0 my-6 md:my-0 md:mx-6 block border-b-2 md:border-none">
           Features
         </a>
-        
-        <a href="#" class="mx-6">
+  
+        <a href="#" class="pb-2 px-6 md:p-0 my-6 md:my-0 md:mx-6 block border-b-2 md:border-none">
           About Us
         </a>
-        
+  
         <a href="#"
-          class="cursor-pointer mx-8 border-2 bg-gradient-to-r from-accent1-500 to-accent2-500  px-4 py-3 uppercase text-white rounded-lg font-medium">
+          class=" mx-6 cursor-pointer md:mx-8 border bg-gradient-to-r from-accent1-500 to-accent2-500  px-4 py-3 uppercase text-white rounded-lg font-medium">
           Login
         </a>
       </div>
-        
+  
     </div>
-    <div class="border-b-2"></div>
+    <div class="md:border-b-2"></div>
   </section>
 
-  <section class="max-w-7xl mx-auto h-screen-90 items-center flex">
+  <section class="max-w-7xl mx-auto lg:h-screen-90 items-center flex">
 
     <div class="w-full">
-      <div class="flex justify-between">
-        <div>
-          <div class="pt-16 text-6xl font-bold">
+      <div class="lg:flex justify-between px-6 md:px-10 2xl:p-0">
+        <div class="w-full lg:w-1/2">
+          <div class="pt-16 text-4xl md:text-6xl font-bold">
             <div>
               <h2>Learn <br> new concepts <br>for each question</h2>
             </div>
@@ -74,7 +86,7 @@
           </div>
         </div>
 
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2">
           <img src="./assets/images/people.svg" class="w-full">
         </div>
       </div>
@@ -82,5 +94,27 @@
 
   </section>
 </body>
+
+<script>
+    let menuBtn = document.getElementById ("menu-button");
+    let closeBtn = document.getElementById ("close-button");
+    let menu = document.getElementById ("menu-items")
+
+    menuBtn.addEventListener("click", open);
+    closeBtn.addEventListener("click", close);
+
+    function open() {
+      menuBtn.style.display = "none";
+      closeBtn.style.display = "block";
+      menu.style.display = "block";
+    }
+
+    function close() {
+      menuBtn.style.display = "block";
+      closeBtn.style.display = "none";
+      menu.style.display = "none";
+    }
+
+  </script>
 
 </html>
